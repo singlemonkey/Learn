@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/bubble.cpp
+algorithm
+-
+iostream
+-
+stdlib.h
+-
+print.h
+/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/print.h
+
+/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/main.cpp
+iostream
+-
+stdlib.h
+-
+print.h
+/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/print.h
+
+/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/print.cpp
+stdio.h
+-
+
+/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/print.h
+stdio.h
+-
+

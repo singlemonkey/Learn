@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sunny/Documents/GitHub/Learn/DataStructure
+CMAKE_SOURCE_DIR = /Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sunny/Documents/GitHub/Learn/DataStructure/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunny/Documents/GitHub/Learn/DataStructure/cmake-build-debug/CMakeFiles /Users/sunny/Documents/GitHub/Learn/DataStructure/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles /Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunny/Documents/GitHub/Learn/DataStructure/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DataStructure
+# Target rules for targets named BubbleSort
 
 # Build rule for target.
-DataStructure: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DataStructure
-.PHONY : DataStructure
+BubbleSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BubbleSort
+.PHONY : BubbleSort
 
 # fast build rule for target.
-DataStructure/fast:
-	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/build
-.PHONY : DataStructure/fast
+BubbleSort/fast:
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/build
+.PHONY : BubbleSort/fast
+
+bubble.o: bubble.cpp.o
+
+.PHONY : bubble.o
+
+# target to build an object file
+bubble.cpp.o:
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/bubble.cpp.o
+.PHONY : bubble.cpp.o
+
+bubble.i: bubble.cpp.i
+
+.PHONY : bubble.i
+
+# target to preprocess a source file
+bubble.cpp.i:
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/bubble.cpp.i
+.PHONY : bubble.cpp.i
+
+bubble.s: bubble.cpp.s
+
+.PHONY : bubble.s
+
+# target to generate assembly for a file
+bubble.cpp.s:
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/bubble.cpp.s
+.PHONY : bubble.cpp.s
 
 main.o: main.cpp.o
 
@@ -129,7 +156,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +165,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,8 +174,35 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/DataStructure.dir/build.make CMakeFiles/DataStructure.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+print.o: print.cpp.o
+
+.PHONY : print.o
+
+# target to build an object file
+print.cpp.o:
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/print.cpp.o
+.PHONY : print.cpp.o
+
+print.i: print.cpp.i
+
+.PHONY : print.i
+
+# target to preprocess a source file
+print.cpp.i:
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/print.cpp.i
+.PHONY : print.cpp.i
+
+print.s: print.cpp.s
+
+.PHONY : print.s
+
+# target to generate assembly for a file
+print.cpp.s:
+	$(MAKE) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/print.cpp.s
+.PHONY : print.cpp.s
 
 # Help Target
 help:
@@ -158,10 +212,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... DataStructure"
+	@echo "... BubbleSort"
+	@echo "... bubble.o"
+	@echo "... bubble.i"
+	@echo "... bubble.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print.o"
+	@echo "... print.i"
+	@echo "... print.s"
 .PHONY : help
 
 
