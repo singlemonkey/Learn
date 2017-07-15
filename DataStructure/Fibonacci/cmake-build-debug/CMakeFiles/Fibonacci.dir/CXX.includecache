@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sunny/Documents/GitHub/Learn/DataStructure/Fibonacci/Fib.h
+
+/Users/sunny/Documents/GitHub/Learn/DataStructure/Fibonacci/main.cpp
+iostream
+-
+Fib.h
+/Users/sunny/Documents/GitHub/Learn/DataStructure/Fibonacci/Fib.h
+
