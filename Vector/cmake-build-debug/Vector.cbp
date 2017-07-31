@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
@@ -66,6 +67,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
@@ -80,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sunny/Documents/GitHub/Learn/Vector/Vector.h">
+		<Unit filename="/Users/sunny/Documents/GitHub/Learn/Vector/MyVector.cpp">
 			<Option target="Vector"/>
 		</Unit>
-		<Unit filename="/Users/sunny/Documents/GitHub/Learn/Vector/Vector_copyfrom.h">
+		<Unit filename="/Users/sunny/Documents/GitHub/Learn/Vector/MyVector.h">
 			<Option target="Vector"/>
 		</Unit>
 		<Unit filename="/Users/sunny/Documents/GitHub/Learn/Vector/main.cpp">

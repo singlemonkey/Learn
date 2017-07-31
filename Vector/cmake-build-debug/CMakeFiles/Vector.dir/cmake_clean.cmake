@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Vector.dir/main.cpp.o"
+  "CMakeFiles/Vector.dir/MyVector.cpp.o"
   "Vector.pdb"
   "Vector"
 )
