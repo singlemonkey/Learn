@@ -1,5 +1,10 @@
 
+#include <cstdlib>
+#include <iostream>
 #include "MyVector.h"
+#include "fib.h"
+
+using namespace std;
 
 template<typename T>
 void MyVector<T>::copyFrom(T *const A, rank lo, rank hi) {
@@ -30,9 +35,9 @@ void MyVector<T>::shrink() {
     T *oldElem = _elem;
     _elem = new T[_capacity >>= 1];   //容量减半
     for (int i = 0; i < _size; i++) {
-        _elem[i]=oldElem[i];
+        _elem[i] = oldElem[i];
     }
-    delete [] oldElem;
+    delete[] oldElem;
 }
 
 /*
@@ -53,6 +58,34 @@ rank MyVector<T>::insert(rank n, const T &e) {
     _elem[n] = e;
     _size++;
     return n;
+}
+
+/*
+ * 有序向量二分查找
+ * 一次比较，两个分支，提前结束
+ */
+template<typename T>
+rank MyVector::binSearch(const T &e, rank lo, rank hi) const {
+    while (lo < hi) {
+        rank mi = (lo + hi) >> 1;
+        e < _elem[mi] ? hi = mi : lo = mi + 1;
+    }
+    return --lo;
+}
+
+/*
+ * 二分查找特殊版，区fib为切分点
+ */
+template<typename T>
+rank MyVector::fibSearch(const T &e, rank lo, rank hi) const {
+    Fib fib(hi - lo);
+    while (lo < hi) {
+        while (hi - lo < fib.get())
+            fib.prev();
+        rank mi = lo + fib.get() - 1;
+        e < _elem[mi] ? hi = mi : lo = mi + 1;
+        return --lo;
+    }
 }
 
 /*
@@ -118,6 +151,56 @@ int MyVector<T>::disordered() const {
     }
     return n;
 }
+
+template<typename T>
+void MyVector::bubbleSort(rank lo, rank hi) {
+    while (lo < (hi = bubble(lo, hi)));
+}
+
+template<typename T>
+bool MyVector::bubble(rank lo, rank hi) {
+    bool sorted = true;
+    while (++lo < hi) {
+        if (_elem[lo - 1] > _elem[lo]) {
+            sorted = false;
+            swap(_elem[lo - 1], _elem[lo]);
+        }
+    }
+    return sorted;
+}
+
+template<typename T>
+void MyVector::mergeSort(rank lo, rank hi) {
+    if (hi - lo < 2)
+        return;
+    int mi = (lo + hi) / 2;
+    mergeSort(lo, mi);
+    mergeSort(mi, hi);
+    merge(lo, mi, hi);
+}
+
+template<typename T>
+void MyVector::merge(rank lo, rank mi, rank hi) {
+    T *A = _elem + lo;
+
+    int b = mi - lo;
+    T *B = new T[b];
+    for (int i = 0; i < b; B[i] = A[i++]);
+
+    int c = hi - mi;
+    T *C = _elem + mi;
+
+    for (rank i = 0, j = 0, k = 0; j < b;) {
+        if ((j < b) && (C[k] < B[j]))
+            A[i++] = B[j++];
+        if ((c < k) && B[j] <= C[k])
+            A[i++] = C[k++];
+    }
+    delete[] B;
+}
+
+
+
 
 
 

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sunny/Documents/GitHub/Learn/Vector
+CMAKE_SOURCE_DIR = /Users/sunny/Personal/GitHub/Learn/Vector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Vector.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Vector.dir/flags.make
 
 CMakeFiles/Vector.dir/main.cpp.o: CMakeFiles/Vector.dir/flags.make
 CMakeFiles/Vector.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Vector.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Vector.dir/main.cpp.o -c /Users/sunny/Documents/GitHub/Learn/Vector/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Vector.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Vector.dir/main.cpp.o -c /Users/sunny/Personal/GitHub/Learn/Vector/main.cpp
 
 CMakeFiles/Vector.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Vector.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sunny/Documents/GitHub/Learn/Vector/main.cpp > CMakeFiles/Vector.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sunny/Personal/GitHub/Learn/Vector/main.cpp > CMakeFiles/Vector.dir/main.cpp.i
 
 CMakeFiles/Vector.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Vector.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sunny/Documents/GitHub/Learn/Vector/main.cpp -o CMakeFiles/Vector.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sunny/Personal/GitHub/Learn/Vector/main.cpp -o CMakeFiles/Vector.dir/main.cpp.s
 
 CMakeFiles/Vector.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Vector.dir/main.cpp.o.provides.build: CMakeFiles/Vector.dir/main.cpp.
 
 CMakeFiles/Vector.dir/MyVector.cpp.o: CMakeFiles/Vector.dir/flags.make
 CMakeFiles/Vector.dir/MyVector.cpp.o: ../MyVector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Vector.dir/MyVector.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Vector.dir/MyVector.cpp.o -c /Users/sunny/Documents/GitHub/Learn/Vector/MyVector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Vector.dir/MyVector.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Vector.dir/MyVector.cpp.o -c /Users/sunny/Personal/GitHub/Learn/Vector/MyVector.cpp
 
 CMakeFiles/Vector.dir/MyVector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Vector.dir/MyVector.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sunny/Documents/GitHub/Learn/Vector/MyVector.cpp > CMakeFiles/Vector.dir/MyVector.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sunny/Personal/GitHub/Learn/Vector/MyVector.cpp > CMakeFiles/Vector.dir/MyVector.cpp.i
 
 CMakeFiles/Vector.dir/MyVector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Vector.dir/MyVector.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sunny/Documents/GitHub/Learn/Vector/MyVector.cpp -o CMakeFiles/Vector.dir/MyVector.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sunny/Personal/GitHub/Learn/Vector/MyVector.cpp -o CMakeFiles/Vector.dir/MyVector.cpp.s
 
 CMakeFiles/Vector.dir/MyVector.cpp.o.requires:
 
@@ -117,7 +117,7 @@ Vector: CMakeFiles/Vector.dir/main.cpp.o
 Vector: CMakeFiles/Vector.dir/MyVector.cpp.o
 Vector: CMakeFiles/Vector.dir/build.make
 Vector: CMakeFiles/Vector.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Vector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Vector"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Vector.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -135,6 +135,6 @@ CMakeFiles/Vector.dir/clean:
 .PHONY : CMakeFiles/Vector.dir/clean
 
 CMakeFiles/Vector.dir/depend:
-	cd /Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sunny/Documents/GitHub/Learn/Vector /Users/sunny/Documents/GitHub/Learn/Vector /Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug /Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug /Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles/Vector.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sunny/Personal/GitHub/Learn/Vector /Users/sunny/Personal/GitHub/Learn/Vector /Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug /Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug /Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles/Vector.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Vector.dir/depend
 

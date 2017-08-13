@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/sunny/Documents/GitHub/Learn/Vector/MyVector.cpp" "/Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles/Vector.dir/MyVector.cpp.o"
-  "/Users/sunny/Documents/GitHub/Learn/Vector/main.cpp" "/Users/sunny/Documents/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles/Vector.dir/main.cpp.o"
+  "/Users/sunny/Personal/GitHub/Learn/Vector/MyVector.cpp" "/Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles/Vector.dir/MyVector.cpp.o"
+  "/Users/sunny/Personal/GitHub/Learn/Vector/main.cpp" "/Users/sunny/Personal/GitHub/Learn/Vector/cmake-build-debug/CMakeFiles/Vector.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

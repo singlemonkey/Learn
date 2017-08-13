@@ -3,55 +3,87 @@
 #define VECTOR_MYVECTOR_H
 
 typedef int rank;
-int DefaultCapacity=3;
+int DefaultCapacity = 3;
 
-template <typename T> class MyVector{
+template<typename T>
+class MyVector {
 protected:
     rank _size;
     int _capacity;
-    T* _elem;
-    void copyFrom(T* const A,rank lo,rank hi);
+    T *_elem;
+
+    void copyFrom(T *const A, rank lo, rank hi);
+
     void expand();
+
     void shrink();
+
 public:
 //构造函数
-    MyVector(int capacity=DefaultCapacity,int size=0,T v=0){
-        _capacity=capacity;
-        _elem=new T[_capacity];
-        for (_size = 0; _size< size;_size++) {
-            _elem[_size]=v;
+    MyVector(int capacity = DefaultCapacity, int size = 0, T v = 0) {
+        _capacity = capacity;
+        _elem = new T[_capacity];
+        for (_size = 0; _size < size; _size++) {
+            _elem[_size] = v;
         }
     };
-    MyVector(T const* A,rank n){
-        copyFrom(A,0,n);
+
+    MyVector(T const *A, rank n) {
+        copyFrom(A, 0, n);
     };
-    MyVector(T const* A,rank lo,rank hi){
-        copyFrom(A,lo,hi);
+
+    MyVector(T const *A, rank lo, rank hi) {
+        copyFrom(A, lo, hi);
     }
-    MyVector(MyVector<T> const& V){
-        copyFrom(V._elem,0,V._size);
+
+    MyVector(MyVector<T> const &V) {
+        copyFrom(V._elem, 0, V._size);
     }
-    MyVector(MyVector<T> const& V,rank lo,rank hi){
-        copyFrom(V._elem,lo,hi);
+
+    MyVector(MyVector<T> const &V, rank lo, rank hi) {
+        copyFrom(V._elem, lo, hi);
     }
+
 //析构函数
-    ~MyVector(){
-        delete [] _elem;
+    ~MyVector() {
+        delete[] _elem;
     }
+
 //只读访问接口
-    rank find(T const& e,rank lo,rank hi) const ;
-    rank find(T const& e) const {
-        return find(e,0,_size);
+    rank find(T const &e, rank lo, rank hi) const;
+
+    rank find(T const &e) const {
+        return find(e, 0, _size);
     };
+
+    rank binSearch(T &const e, rank lo, rank hi) const ;
+
+    rank fibSearch(T &const e, rank lo, rank hi) const ;
+
     int disordered() const;
+
 //可写访问接口
     rank insert(rank n, T const &e);
-    int remove(rank lo,rank hi);
+
+    int remove(rank lo, rank hi);
+
     T remove(rank r);
+
     int deduplicate();
+
     int uniquify();
+
+    void bubbleSort(rank lo, rank hi);
+
+    bool bubble(rank lo, rank hi);
+
+    void mergeSort(rank lo, rank hi);
+
+    void merge(rank lo, rank mi, rank hi);
+
 //遍历
-    template <typename VST> void traverse(VST&);
+    template<typename VST>
+    void traverse(VST &);
 };
 
 #endif //VECTOR_MYVECTOR_H
