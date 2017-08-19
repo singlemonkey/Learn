@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sunny/Personal/GitHub/Learn/MyVector/Fib.h
+
+/Users/sunny/Personal/GitHub/Learn/MyVector/MyVector.cpp
+cstdlib
+-
+iostream
+-
+MyVector.h
+/Users/sunny/Personal/GitHub/Learn/MyVector/MyVector.h
+Fib.h
+/Users/sunny/Personal/GitHub/Learn/MyVector/Fib.h
+
+/Users/sunny/Personal/GitHub/Learn/MyVector/MyVector.h
+
+/Users/sunny/Personal/GitHub/Learn/MyVector/main.cpp
+iostream
+-
+MyVector.h
+/Users/sunny/Personal/GitHub/Learn/MyVector/MyVector.h
+

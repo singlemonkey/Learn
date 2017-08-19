@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/bubble.cpp" "/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles/BubbleSort.dir/bubble.cpp.o"
-  "/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/main.cpp" "/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles/BubbleSort.dir/main.cpp.o"
-  "/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/print.cpp" "/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles/BubbleSort.dir/print.cpp.o"
+  "/Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort/bubble.cpp" "/Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles/BubbleSort.dir/bubble.cpp.o"
+  "/Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort/main.cpp" "/Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles/BubbleSort.dir/main.cpp.o"
+  "/Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort/print.cpp" "/Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/CMakeFiles/BubbleSort.dir/print.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

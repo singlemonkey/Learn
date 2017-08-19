@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort
+# Install script for directory: /Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/sunny/Documents/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/sunny/Personal/GitHub/Learn/DataStructure/BubbleSort/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
